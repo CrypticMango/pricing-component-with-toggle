@@ -1,7 +1,37 @@
+:root {
+    --gradient:  hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
 .attribution {
+    margin-top: 20px;
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+    color: hsl(237, 63%, 64%);
+}
+
+.fa-brands {
+   margin: 30px;
+    font-size: 30px;
+    color: hsl(237, 63%, 64%);
 }
