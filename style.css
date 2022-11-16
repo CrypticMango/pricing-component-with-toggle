@@ -16,17 +16,40 @@ body {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     background: url(/images/bg-top.svg) no-repeat 200px -40px;
+    text-align: center;
+    background-color: var(--very-light-grayish-blue);
 }
 
 footer {
     text-align: center;
 }
 
+h1 {
+    color: var(--grayish-blue);
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*toggle slider styling start*/
+
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-bottom: 70px;
   }
 
   .switch input {
@@ -73,13 +96,36 @@ footer {
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
+  /* Rounded slider*/
   .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  /*toggle slider styling end*/
+
+  /*general card styling*/
+
+  .pricing-card-white, 
+  .pricing-card-purple {
+    box-shadow: 0px 0px 20px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 290px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .pricing-card-white {
+    background-color: white;
+  }
+
+  .pricing-card-purple {
+    background: var(--gradient);
+    color: white;
   }
 
 .attribution {
