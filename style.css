@@ -1,4 +1,5 @@
 :root {
+    --gradient-r: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     --gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     --very-light-grayish-blue: hsl(240, 78%, 98%);
     --light-grayish-blue: hsl(234, 14%, 74%);
@@ -31,7 +32,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 15px;
 }
 
 ul {
@@ -40,7 +41,40 @@ ul {
 
 li {
     list-style-type: none;
+    margin: 15px;
+    color: var(--grayish-blue);
 }
+
+.pricing-card-purple li {
+    color: white;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid hsl(235, 53%, 92%);
+}
+
+button {
+    margin-top: 10px;
+    padding: 15px 90px;
+    background: var(--gradient-r);
+    border-radius: 6px;
+    border: 1px solid var(--gradient-r);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-white {
+    background: white;
+    color: hsl(237, 63%, 64%);
+}
+
+.annually, 
+.monthly {
+    color: var(--light-grayish-blue);
+}
+
 
 /*toggle slider styling start*/
 
@@ -111,11 +145,11 @@ li {
 
   .pricing-card-white, 
   .pricing-card-purple {
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px rgb(199, 197, 197);
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     width: 290px;
-    height: 300px;
+    height: 380px;
     border-radius: 10px;
   }
 
@@ -126,6 +160,24 @@ li {
   .pricing-card-purple {
     background: var(--gradient);
     color: white;
+  }
+
+  .pricing-card-white .annual-price {
+    color: var(--dark-grayish-blue);
+  }
+
+  .pricing-card-white .monthly-price {
+    color: var(--dark-grayish-blue);
+  }
+
+  .annual-price, 
+  .monthly-price {
+    font-size: 65px;
+    margin: 0;
+  }
+
+  .annual-price {
+    display: none;
   }
 
 .attribution {
