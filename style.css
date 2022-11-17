@@ -126,7 +126,7 @@ button:hover {
   }
 
   .slider:hover {
-    background: linear-gradient(to right, hsl(237, 56%, 87%), hsl(237, 68%, 77%));
+    background: hsl(237, 56%, 87%);
   }
 
   .slider:before {
@@ -146,7 +146,7 @@ button:hover {
   }
 
   input:checked + .slider:hover {
-    background: linear-gradient(to right, hsl(237, 56%, 87%), hsl(237, 68%, 77%));
+    background:hsl(237, 56%, 87%);
   }
 
   input:focus + .slider {
