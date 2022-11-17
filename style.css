@@ -125,6 +125,10 @@ button:hover {
     transition: .4s;
   }
 
+  .slider:hover {
+    background: linear-gradient(to right, hsl(237, 56%, 87%), hsl(237, 68%, 77%));
+  }
+
   .slider:before {
     position: absolute;
     content: "";
@@ -139,6 +143,10 @@ button:hover {
 
   input:checked + .slider {
     background: var(--gradient);
+  }
+
+  input:checked + .slider:hover {
+    background: linear-gradient(to right, hsl(237, 56%, 87%), hsl(237, 68%, 77%));
   }
 
   input:focus + .slider {
