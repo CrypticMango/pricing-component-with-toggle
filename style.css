@@ -238,7 +238,7 @@ input:checked + .slider:before {
 
 @media (min-width: 1440px) {
   body {
-    background: url(/images/bg-top.svg) no-repeat 1020px 0px, url(/images/bg-bottom.svg) no-repeat 0px 496px;
+    background: url(/images/bg-top.svg) no-repeat 1055px 0px, url(/images/bg-bottom.svg) no-repeat 0px 496px;
   
     background-color: var(--very-light-grayish-blue);
   }
